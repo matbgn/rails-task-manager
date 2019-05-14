@@ -1,0 +1,26 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  margin: 35px 0 35px 35px;
+}
+
+.show-title {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.btn-lg {
+  float: right;
+  margin-right: 50px;
+}
+
+blockquote {
+  background-color: lightgray;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px 0px 10px 10px;
+  margin-right: 200px;
+}

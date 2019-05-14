@@ -1,0 +1,17 @@
+<h1><%= @task[:title] %></h1> 
+<%= link_to edit_path, role: "button", class: "btn btn-outline-secondary btn-lg" do %><i class='fas fa-pencil-alt'></i> Edit this task<% end %>
+
+<div class="container">
+
+<blockquote><%= @task[:details] %></blockquote>
+
+<% if !@task[:completed] %>
+  <p><i class="far fa-square"></i> This task is not completed yet</p>
+<% else %>
+  <p><i class="far fa-check-square"></i> This task is completed</p>
+<% end %>
+
+<hr>
+
+<p><i class="fas fa-undo"></i> <%= link_to "Back to list", tasks_path %></p>
+</div>
